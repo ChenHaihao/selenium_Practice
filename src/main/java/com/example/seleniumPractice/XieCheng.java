@@ -4,6 +4,12 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+/**
+ * @author 池恩
+ * @date 2022/1/11 10:41
+ * @project_name
+ */
+
 public class XieCheng {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new FirefoxDriver();
