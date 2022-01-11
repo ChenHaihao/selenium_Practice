@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 /**
  * @author 池恩
  * @date 2022/1/11 10:41
- * @project_name
+ * @project_name  携程网购票流程模拟（包含登录等操作）
  */
 
 public class XieCheng {
@@ -43,6 +43,9 @@ public class XieCheng {
         Thread.sleep(500);
 
         /*拖动验证条形验证码*/
+
+
+
 
 
 
