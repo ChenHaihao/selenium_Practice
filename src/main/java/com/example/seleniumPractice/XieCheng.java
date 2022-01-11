@@ -40,19 +40,16 @@ public class XieCheng {
         Thread.sleep(500);
         driver.findElement(By.xpath("//*[@id=\"normalview\"]/p/input\n")).click();
         driver.findElement(By.xpath("//*[@id=\"nsubmit\"]")).click();
-        Thread.sleep(500);
+        Thread.sleep(2000);
+
 
         /*拖动验证条形验证码*/
 
-
-
-
-
-
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[3]/div[1]/div[3]/div[2]/button")).click();
-        driver.findElement(By.xpath("/html/body/div[12]/div/div[2]/div/div/div[2]/ul/li[1]/i[1]")).click();
-
-
-
+        driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div[3]/div[1]/div[3]/div[2]/button\n")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[6]/div/div[2]/div/div/div[2]/ul/li[1]/i[1]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("/html/body/div[6]/div/div[2]/div/div/div[3]/button")).click();
+        Thread.sleep(1000);
     }
 }
