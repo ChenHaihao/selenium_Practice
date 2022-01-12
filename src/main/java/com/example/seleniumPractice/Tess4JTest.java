@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * @author 池恩
  * @date 2022/1/11 15:01
- * @project_name    Tess4JTest练习
+ * @project_name Tess4JTest练习
  */
 public class Tess4JTest {
     public static void main(String[] args) {
@@ -18,8 +18,8 @@ public class Tess4JTest {
         File file = new File(path + "\\testphoto3.jpg");
         ITesseract instance = new Tesseract();
         /*
-        * 获取项目根目录路径
-        * */
+         * 获取项目根目录路径
+         * */
         File directory = new File(path);
         String courseFile = null;
         try {
@@ -28,9 +28,9 @@ public class Tess4JTest {
             e.printStackTrace();
         }
         /*
-        *  设置训练库位置
-        * */
-        instance.setDatapath(courseFile+"\\tessdata");
+         *  设置训练库位置
+         * */
+        instance.setDatapath(courseFile + "\\tessdata");
 
         instance.setLanguage("eng");            //设置语言格式为中文
         String result = null;
@@ -38,7 +38,7 @@ public class Tess4JTest {
             long startTime = System.currentTimeMillis();
             result = instance.doOCR(file);
             long endTime = System.currentTimeMillis();
-            System.out.println("识别耗时:"+(endTime - startTime)+"毫秒");
+            System.out.println("识别耗时:" + (endTime - startTime) + "毫秒");
         } catch (TesseractException e) {
             e.printStackTrace();
         }

@@ -16,11 +16,11 @@ public class IITest {
         Thread.sleep(2000);
 
         driver.navigate().back();               //网页后退
-        System.out.printf("当前网址：",driver.getCurrentUrl());
+        System.out.printf("当前网址：", driver.getCurrentUrl());
         Thread.sleep(2000);
 
         driver.navigate().forward();            //网页前进
-        System.out.printf("当前网址：",driver.getCurrentUrl());
+        System.out.printf("当前网址：", driver.getCurrentUrl());
         Thread.sleep(3000);
 
         driver.navigate().refresh();            //F5刷新网页

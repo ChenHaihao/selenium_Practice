@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+
 public class VCodePicture {
     public static void main(String[] args) throws AWTException {
         WebDriver driver = new FirefoxDriver();
